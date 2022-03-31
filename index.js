@@ -14,6 +14,7 @@ const main = async () => {
         const directory = core.getInput('PROJECT_DIRECTORY');
         const spec = core.getInput('SPEC_PATH');
         const files = core.getInput('FILES_PATHS');
+        const token = core.getInput('TOKEN');
 
         await require("./import")(directory, branch, { token, organizationId, userId }, { directory, name, spec, files, classifier, subType });
 
