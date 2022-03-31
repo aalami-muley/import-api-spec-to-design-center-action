@@ -1,5 +1,5 @@
-name: "Publish a specification to Exchange"
-description: "Import a specification project to Design Center and deploy it to Exchange"
+name: "Import a specification"
+description: "Import a specification project to Design Center"
 author: "Ahmed ALAMI"
 
 inputs:
