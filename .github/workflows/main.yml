@@ -1,0 +1,21 @@
+on: [push]
+
+jobs:
+  import_to_design_center:
+    runs-on: ubuntu-latest
+    name: A job to import a specification to design center
+    steps:
+      - name: Import Specification
+        id: import_specification
+        uses: octocat/import-api-spec-to-design-center-action@main
+        with:
+          ORGANIZATION_ID: ''
+          USER_ID: ''
+          BRANCH: 'master'
+          CLASSIFIER: 'raml'
+          SUB_TYPE: ''
+          PROJECT_NAME: ''
+          PROJECT_DIRECTORY: '${{ github.workspace }}'
+          SPEC_PATH: ''
+          FILES_PATHS: ''
+          TOKEN: ''
