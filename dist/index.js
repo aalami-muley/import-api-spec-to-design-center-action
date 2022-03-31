@@ -68,12 +68,12 @@ module.exports = async function (directory, branch, credentials, { name, spec, f
         }
 
         const specPath = directory + "/" + spec;
-        if (fs.existsSync(specPath)) {
+        //if (fs.existsSync(specPath)) {
             await lib.addSpec(credentials, { projectId, specPath, spec, branch });
             info(`Spec with name ${spec} added successfully released.`);
-        } else {
-            warn(`Spec file was ignored as its relative path ${spec} and absolue path ${specPath} is not resolved.`);
-        }
+        //} else {
+        //    warn(`Spec file was ignored as its relative path ${spec} and absolue path ${specPath} is not resolved.`);
+        //}
 
         for (const file of files || []) {
             const filePath = directory + "/" + file;
