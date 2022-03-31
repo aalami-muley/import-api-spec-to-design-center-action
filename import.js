@@ -4,10 +4,6 @@ const fs = require("fs");
 const lib = require("./lib");
 const {info, warn, error} = require("./log");
 
-const info = console.log;
-const warn = console.log;
-const error = console.log;
-
 module.exports = async function (directory, branch, credentials, { name, spec, files, classifier, subType }) {
     let projectId;
     try {
