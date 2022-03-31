@@ -7,7 +7,7 @@ const {info, warn, error} = require("./log");
 module.exports = async function (directory, branch, credentials, { name, spec, files, classifier, subType }) {
     let projectId;
     try {
-        const projectReference = await lib.getProject(credentials, name);
+        let projectReference = await lib.getProject(credentials, name);
         if (!projectReference) {
             projectReference = await lib.createProject(credentials, { name, classifier, subType });
             info(`A new project was created with name ${name}`);
@@ -16,7 +16,7 @@ module.exports = async function (directory, branch, credentials, { name, spec, f
         projectId = projectReference.id;
         info(`Using project with id ${projectId}`);
 
-        const branchReference = await lib.getBranch(credentials, projectId, branch);
+        let branchReference = await lib.getBranch(credentials, projectId, branch);
         if (!branchReference) {
             await lib.createBranch(credentials, projectId, branch);
             info(`A new branch was created with name ${branch}`);
