@@ -16,6 +16,10 @@ This action helps to import and update a sepcification project in Design center.
 |SPEC_PATH|The relative path of the root specification file|true|
 |FILES_PATHS|The relative path of the files to import|true|
 
+## Secrets
+
+The action uses a TOKEN secret used to authorize the actions to Anypoint Platform.
+
 ## Example usage
 
 ```yaml
@@ -30,4 +34,5 @@ with:
   PROJECT_DIRECTORY: '${{ github.workspace }}'
   SPEC_PATH: ''
   FILES_PATHS: ''
+  TOKEN: ''
 ```
