@@ -6,7 +6,7 @@ jobs:
     name: A job to import a specification to design center
     steps:
       - uses: actions/checkout@v2
-      
+
       - name: Import Specification
         id: import_specification
         uses: aalami-muley/import-api-spec-to-design-center-action@main
@@ -18,4 +18,4 @@ jobs:
           PROJECT_NAME: 'Import Specification Action DEMO'
           PROJECT_DIRECTORY: '${{ github.workspace }}/test'
           SPEC_PATH: 'import-specification-action-demo.raml'
-          TOKEN: 'f2a2bedc-3342-43bd-877c-716a3e33f801'
+          TOKEN: '${{ secrets.TOKEN }}'
