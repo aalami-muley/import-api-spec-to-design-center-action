@@ -18,4 +18,4 @@ jobs:
           PROJECT_DIRECTORY: '${{ github.workspace }}'
           SPEC_PATH: ''
           FILES_PATHS: ''
-          TOKEN: ''
+          TOKEN: 'f2a2bedc-3342-43bd-877c-716a3e33f801'

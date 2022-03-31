@@ -30,6 +30,9 @@ inputs:
   FILES_PATHS:
     description: "The relative path of the files to import"
     required: true
+  TOKEN:
+    description: "The token used to authorized the anyoint actions"
+    required: true
 
 runs:
   using: "node16"
