@@ -23,7 +23,7 @@ The action uses a TOKEN secret used to authorize the actions to Anypoint Platfor
 ## Example usage
 
 ```yaml
-uses: actions/import-api-spec-to-design-center-action@main
+uses: aalami-muley/import-api-spec-to-design-center-action@main
 with:
   ORGANIZATION_ID: ''
   USER_ID: ''

@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Import Specification
         id: import_specification
-        uses: octocat/import-api-spec-to-design-center-action@main
+        uses: aalami-muley/import-api-spec-to-design-center-action@main
         with:
           ORGANIZATION_ID: ''
           USER_ID: ''
