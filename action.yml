@@ -1,0 +1,36 @@
+name: "Publish a specification to Exchange"
+description: "Import a specification project to Design Center and deploy it to Exchange"
+author: "Ahmed ALAMI"
+
+inputs:
+  ORGANIZATION_ID:
+    description: "The organization id"
+    required: true
+  USER_ID:
+    description: "The user id used to create the design center project"
+    required: true
+  BRANCH:
+    description: "The branch used to commit the specification project"
+    required: true
+  CLASSIFIER:
+    description: "The classifier of the specification project"
+    required: true
+  SUB_TYPE:
+    description: "The subtype of the classfier of the specification project"
+    required: false
+  PROJECT_NAME:
+    description: "The specification project name"
+    required: true
+  PROJECT_DIRECTORY:
+    description: "The directory of the project"
+    required: false
+  SPEC_PATH:
+    description: "The relative path of the root specification file"
+    required: true
+  FILES_PATHS:
+    description: "The relative path of the files to import"
+    required: true
+
+runs:
+  using: "node16"
+  main: "index.js"
