@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to import a specification to design center
     steps:
+      - uses: actions/checkout@v2
+      
       - name: Import Specification
         id: import_specification
         uses: aalami-muley/import-api-spec-to-design-center-action@main
