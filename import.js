@@ -49,7 +49,7 @@ module.exports = async function (directory, branch, credentials, { name, spec, f
             }
         }
     } catch (err) {
-        error(`Error thrown while processing.}`);
+        error(`Error thrown while processing.`);
         error(err);
         throw err;
     } finally {
