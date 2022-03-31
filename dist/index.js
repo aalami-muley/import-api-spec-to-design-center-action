@@ -138,7 +138,7 @@ module.exports = {
     async addSpec(credentials, { projectId, branch, specPath, spec, message }) {
         (await client.get(credentials).post(`/projects/${projectId}/branches/${branch}/save?commit=true&message=${message || DEFAULT_COMMIT_MESSAGE}`, [
             { "path": "exchange.json", "type": "FILE", "content": JSON.stringify({ "dependencies": [], "main": spec }) },
-            { "path": `/${spec}`, "type": "FILE", "content": JSON.stringify(fs.readFileSync(specPath, "utf-8")) }
+            { "path": `/${spec}`, "type": "FILE", "content": fs.readFileSync(specPath, "utf-8") }
         ]));
     },
     async addFile(credentials, { projectId, branch, filePath, file, message }) {
