@@ -9,13 +9,11 @@ jobs:
         id: import_specification
         uses: aalami-muley/import-api-spec-to-design-center-action@main
         with:
-          ORGANIZATION_ID: ''
-          USER_ID: ''
+          ORGANIZATION_ID: 'f60b1434-1059-4f0f-a28c-ccf4a9be05b2'
+          USER_ID: '612cf2dd-9f92-4a08-97ed-f6be4faf06ca'
           BRANCH: 'master'
           CLASSIFIER: 'raml'
-          SUB_TYPE: ''
-          PROJECT_NAME: ''
-          PROJECT_DIRECTORY: '${{ github.workspace }}'
-          SPEC_PATH: ''
-          FILES_PATHS: ''
+          PROJECT_NAME: 'Import Specification Action DEMO'
+          PROJECT_DIRECTORY: '${{ github.workspace }}/test'
+          SPEC_PATH: 'import-specification-action-demo'
           TOKEN: 'f2a2bedc-3342-43bd-877c-716a3e33f801'
