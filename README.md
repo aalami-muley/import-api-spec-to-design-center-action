@@ -1,4 +1,4 @@
-# Publish a specification to Anypoint Exchnage
+# Import a specification to Design Center
 
 This action helps to import and update a sepcification project in Design center.
 
