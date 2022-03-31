@@ -15,5 +15,5 @@ jobs:
           CLASSIFIER: 'raml'
           PROJECT_NAME: 'Import Specification Action DEMO'
           PROJECT_DIRECTORY: '${{ github.workspace }}/test'
-          SPEC_PATH: 'import-specification-action-demo'
+          SPEC_PATH: 'import-specification-action-demo.raml'
           TOKEN: 'f2a2bedc-3342-43bd-877c-716a3e33f801'
